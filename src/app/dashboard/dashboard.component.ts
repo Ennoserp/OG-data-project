@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ɵALLOW_MULTIPLE_PLATFORMS } from '@angular/core';
+import {} from 'googlemaps';
+import { ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
@@ -9,7 +11,10 @@ export class DashboardComponent implements OnInit {
  
 	dataChart1: any;
 	dataChart2: any;
-	dataChart3: any;
+    dataChart3: any;
+
+    @ViewChild('map', null) mapElement: any;
+    map: google.maps.Map;
     
     constructor() {
         this.dataChart1 = {
@@ -71,8 +76,14 @@ export class DashboardComponent implements OnInit {
         };
 		
     }
-  
-  ngOnInit() { }
+
+    ngOnInit() {
+        const mapProperties = {
+            center: new google.maps.LatLng(48, 0),
+            zoom: 1
+       };
+       this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
+     }
 
   
 
