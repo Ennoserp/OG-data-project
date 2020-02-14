@@ -78,12 +78,31 @@ export class DashboardComponent implements OnInit {
     }
 
     ngOnInit() {
-        const mapProperties = {
-            center: new google.maps.LatLng(48, 0),
-            zoom: 1
-       };
-       this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
-     }
+
+        google.charts.load('current', {
+          'packages':['geomap'],
+          // Note: you will need to get a mapsApiKey for your project.
+          // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
+          'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
+        });
+        google.charts.setOnLoadCallback(drawRegionsMap);
+        function drawRegionsMap() {
+          var data = google.visualization.arrayToDataTable([
+            ['Country', 'Popularity'],
+            ['Germany', 200],
+            ['United States', 300],
+            ['Brazil', 400],
+            ['Canada', 500],
+            ['France', 600],
+            ['RU', 700],
+            ['Senegal', 1700]
+          ]);
+           var options = {};
+           
+          var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+          chart.draw(data, options);
+        }
+      }
 
   
 
