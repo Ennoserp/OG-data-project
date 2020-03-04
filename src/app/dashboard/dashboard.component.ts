@@ -1,6 +1,7 @@
 import { Component, OnInit, ɵALLOW_MULTIPLE_PLATFORMS } from '@angular/core';
 import {} from 'googlemaps';
 import { ViewChild } from '@angular/core';
+declare var google;
 
 @Component({
   selector: 'app-dashboard',
