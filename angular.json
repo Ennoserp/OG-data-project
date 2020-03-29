@@ -128,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "projet-JO"
+    }
+  },
+  "defaultProject": "projet-JO",
+  "cli": {
+    "analytics": false
+  }
 }

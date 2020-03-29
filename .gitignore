@@ -48,3 +48,6 @@ angular.json
 package-lock.json
 package.json
 *.json
+angular.json
+package-lock.json
+package.json
