@@ -1,10 +1,15 @@
 <div style="text-align:center">
-    <h2>
-        Disciplines list
-    </h2>
+    <div class="parallax">
+        <div class="titre">
+            <h1>Disciplines list</h1>
+        </div>
+    </div>
     <ul class="countries">
        <li *ngFor="let disc of disciplines">
           <p>{{disc.discipline | uppercase}}, Federation: {{disc.federation}}</p>
        </li>
     </ul>
 </div>
+<footer id="footer">
+    <p>This website is powered by Angular and realised by Marchais Willy and Vavasseur Jaël. | Copyright © 2020 Marchais Vavasseur Inc. All rights reserved.</p>
+</footer>

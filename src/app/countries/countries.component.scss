@@ -1,4 +1,29 @@
 /* CountriesComponent's private CSS styles */
+.titre{
+  text-align: center;
+  padding: 5em;
+  color: rgb(255, 255, 255);
+  
+}
+
+.parallax{
+  background: url("../../assets/img/olympic.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 450px;
+}
+
+#footer{
+  background-color: #f9f9f9;
+  position: relative;
+  padding: 17px;
+  height: 70px;
+  clear: both;
+  text-align: center;
+  font-size: 14px;
+
+}
+
 .countries {
     
     margin-left: auto;
