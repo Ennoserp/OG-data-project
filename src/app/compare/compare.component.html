@@ -1,0 +1,20 @@
+<div class="body_comp">
+    <div class="compared">
+    <app-compared-one></app-compared-one>
+    </div>
+
+    <div class="mainCompared">
+        <h2>Comparator</h2>
+        <p>Here you can compare statistics of 2 countries !</p>
+
+        <div class="charts">
+            <p-chart type="line" [data]="dataChart1" width=500px></p-chart>
+            <p-chart type="bar" [data]="dataChart2" width=500px></p-chart>
+            <p-chart id="radar" type="radar" [data]="dataChart3" width=500px></p-chart>
+        </div>
+    </div>
+
+    <div class="compared">
+    <app-compared-second></app-compared-second>
+    </div>
+</div>

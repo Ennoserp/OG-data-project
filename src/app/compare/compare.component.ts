@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var google;
-
 @Component({
-  selector: 'app-geo-test',
-  templateUrl: './geo-test.component.html',
-  styleUrls: ['./geo-test.component.scss']
+  selector: 'app-compare',
+  templateUrl: './compare.component.html',
+  styleUrls: ['./compare.component.scss']
 })
-export class GeoTestComponent implements OnInit {
+export class CompareComponent implements OnInit {
 
   dataChart1: any;
 	dataChart2: any;
@@ -73,30 +71,8 @@ export class GeoTestComponent implements OnInit {
         };
 		
     }
-  ngOnInit() {
 
-    google.charts.load('current', {
-      'packages':['geomap'],
-      // Note: you will need to get a mapsApiKey for your project.
-      // See: https://developers.google.com/chart/interactive/docs/basic_load_libs#load-settings
-      'mapsApiKey': 'AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY'
-    });
-    google.charts.setOnLoadCallback(drawRegionsMap);
-    function drawRegionsMap() {
-      var data = google.visualization.arrayToDataTable([
-        ['Country', 'Popularity'],
-        ['Germany', 200],
-        ['United States', 300],
-        ['Brazil', 400],
-        ['Canada', 500],
-        ['France', 600],
-        ['RU', 700]
-      ]);
-       var options = {};
-       
-      var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
-      chart.draw(data, options);
-    }
+  ngOnInit() {
   }
 
 }

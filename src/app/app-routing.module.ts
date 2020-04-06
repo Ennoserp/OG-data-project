@@ -10,6 +10,7 @@ import { CountryComponent } from './country/country.component';
 import { DisciplinesComponent } from './disciplines/disciplines.component';
 import { DisciplineComponent } from './discipline/discipline.component';
 import { GamesComponent } from './games/games.component';
+import { CompareComponent } from './compare/compare.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'country/:id', component:CountryComponent},
   { path: 'disciplines', component:DisciplinesComponent},
   { path: 'discipline/:id', component:DisciplineComponent},
-  { path: 'games', component:GamesComponent}
+  { path: 'games', component:GamesComponent},
+  { path: 'compare', component:CompareComponent}
 ];
 
 @NgModule({

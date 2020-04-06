@@ -16,6 +16,9 @@ import { CountryComponent } from './country/country.component';
 import { DisciplineComponent } from './discipline/discipline.component';
 import { DisciplinesComponent } from './disciplines/disciplines.component';
 import { GamesComponent } from './games/games.component';
+import { CompareComponent } from './compare/compare.component';
+import { ComparedOneComponent } from './compared-one/compared-one.component';
+import { ComparedSecondComponent } from './compared-second/compared-second.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { GamesComponent } from './games/games.component';
     CountryComponent,
     DisciplineComponent,
     DisciplinesComponent,
-    GamesComponent
+    GamesComponent,
+    CompareComponent,
+    ComparedOneComponent,
+    ComparedSecondComponent
   ],
   imports: [
     BrowserModule,
