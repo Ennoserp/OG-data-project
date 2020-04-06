@@ -21,13 +21,13 @@ export class MapComponent implements OnInit {
     google.charts.setOnLoadCallback(drawRegionsMap);
     function drawRegionsMap() {
       var data = google.visualization.arrayToDataTable([
-        ['Country', 'Popularity'],
+        ['Country', 'Number of medals'],
         ['Germany', 200],
         ['United States', 300],
         ['Brazil', 400],
         ['Canada', 500],
         ['France', 600],
-        ['RU', 700]
+        ['Russia', 700]
       ]);
        var options = {};
        

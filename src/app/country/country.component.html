@@ -1,6 +1,19 @@
 <div *ngIf="country">
     <h2>{{ country.nation }} details</h2>
 
-    Number of apparitions in OG : {{ country.apps }}<br />
-    Number of medals in OG : {{ country.medal }}
+    <ul>
+        <li>Number of apparitions in OG : {{ country.apps }}</li>
+        <li>Number of medals in OG : {{ country.medal }}</li>
+        <li>Number of gold medals in OG : {{ country.gold }}</li>
+        <li>Number of silver medals in OG : {{ country.silver }}</li>
+        <li>Number of bronze medals in OG : {{ country.bronze }}</li>
+        
+        <div *ngIf="country.mostsuccessfulsport !='-'">
+            <li>Most successful sport : {{ country.mostsuccessfulsport }}</li>
+            <li>Number of medals in this sport : {{ country.medals }}</li>
+            <li>Number of gold medals in this sport : {{ country.golds }}</li>
+            <li>Number of silver medals in this sport : {{ country.silvers }}</li>
+            <li>Number of bronze medals in this sport : {{ country.bronzes }}</li>
+        </div>
+    </ul>
 </div>

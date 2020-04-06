@@ -13,6 +13,9 @@ import { GeoTestComponent } from './geo-test/geo-test.component';
 import { MapComponent } from './map/map.component';
 import { CountriesComponent } from './countries/countries.component';
 import { CountryComponent } from './country/country.component';
+import { DisciplineComponent } from './discipline/discipline.component';
+import { DisciplinesComponent } from './disciplines/disciplines.component';
+import { GamesComponent } from './games/games.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CountryComponent } from './country/country.component';
     GeoTestComponent,
     MapComponent,
     CountriesComponent,
-    CountryComponent
+    CountryComponent,
+    DisciplineComponent,
+    DisciplinesComponent,
+    GamesComponent
   ],
   imports: [
     BrowserModule,
