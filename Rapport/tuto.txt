@@ -1,0 +1,3 @@
+ouvrir un bash git
+ng serve 
+chrome : localhost:4200
