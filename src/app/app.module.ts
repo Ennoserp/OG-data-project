@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
-
+import { HttpClientModule }    from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -35,6 +35,7 @@ import { GamesComponent } from './games/games.component';
     AppRoutingModule,
     FormsModule,
     ChartModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

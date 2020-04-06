@@ -1,4 +1,4 @@
-import { Country } from '../Country';
+import { Country } from '../country';
 
 export const COUNTRIES: Country[] = [
   {

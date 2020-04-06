@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Country } from './country';
-import { COUNTRIES } from './_data/mock-data';
+import { COUNTRIES } from './_data/countryData';
 import { Observable, of } from 'rxjs';
 
 @Injectable({
