@@ -1,0 +1,4 @@
+ouvrir un bash git
+ng build
+ng serve --open
+navigateur web: localhost:4200

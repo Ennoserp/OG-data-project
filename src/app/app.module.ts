@@ -10,13 +10,19 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { GeoTestComponent } from './geo-test/geo-test.component';
+import { MapComponent } from './map/map.component';
+import { CountriesComponent } from './countries/countries.component';
+import { CountryComponent } from './country/country.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     HomeComponent,
-    GeoTestComponent
+    GeoTestComponent,
+    MapComponent,
+    CountriesComponent,
+    CountryComponent
   ],
   imports: [
     BrowserModule,

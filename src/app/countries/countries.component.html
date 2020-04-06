@@ -1,0 +1,19 @@
+<div style="text-align:center">
+    <h2>
+        Country list
+    </h2>
+    <ul class="countries">
+       <li *ngFor="let country of countries">
+           <a routerLink="/country/{{country.id}}">
+          <p>{{country.nation | uppercase}}, Code: {{country.code}}</p>
+          </a>
+       </li>
+    </ul>
+</div>
+
+<div *ngIf="selectedCountry">
+
+    <h2>{{selectedCountry.nation | uppercase}} Details</h2>
+    <div><span>id: </span>{{selectedCountry.code}}</div>
+
+</div> 
