@@ -1,6 +1,10 @@
 <div *ngIf="country">
     <h2>{{ country.nation }} details</h2>
 
+    <div class="drapeau">
+        <img src="https://www.countryflags.io/{{code}}/flat/64.png">
+    </div>
+    
     <ul>
         <li>Number of apparitions in OG : {{ country.apps }}</li>
         <li>Number of medals in OG : {{ country.medal }}</li>
@@ -17,3 +21,4 @@
         </div>
     </ul>
 </div>
+

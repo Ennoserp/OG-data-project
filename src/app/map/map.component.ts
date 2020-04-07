@@ -1,7 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
 import { Country } from '../country';
 import { CountryService } from '../country.service';
-import { CompileShallowModuleMetadata } from '@angular/compiler';
 
 declare var google;
 

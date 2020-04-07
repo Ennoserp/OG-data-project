@@ -13,6 +13,7 @@ export class CountryComponent implements OnInit {
 
   @Input() country: Country;
   //public countryList:Country[] = countries;
+  code : string;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,13 +21,15 @@ export class CountryComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getHero();
+    this.getCountry();
   }
 
-  getHero(): void {
+  getCountry(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.countryService.getCountry(id)
         .subscribe(country => this.country = country);
+
+    this.code = this.country.code.slice(0,2)
   }
   
 }
