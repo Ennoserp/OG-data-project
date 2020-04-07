@@ -19,6 +19,7 @@ import { CompareComponent } from './compare/compare.component';
 import { ComparedOneComponent } from './compared-one/compared-one.component';
 import { ComparedSecondComponent } from './compared-second/compared-second.component';
 import { AboutComponent } from './about/about.component';
+import { FakeComponent } from './fake/fake.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AboutComponent } from './about/about.component';
     CompareComponent,
     ComparedOneComponent,
     ComparedSecondComponent,
-    AboutComponent
+    AboutComponent,
+    FakeComponent
   ],
   imports: [
     BrowserModule,
