@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: 'countries', component: CountriesComponent},
   { path: 'country/:id', component:CountryComponent},
   { path: 'disciplines', component:DisciplinesComponent},
-  { path: 'discipline/:id', component:DisciplineComponent},
+  //{ path: 'discipline/:id', component:DisciplineComponent},
   { path: 'games', component:GamesComponent},
   { path: 'compare', component:CompareComponent},
   { path: 'about', component:AboutComponent}

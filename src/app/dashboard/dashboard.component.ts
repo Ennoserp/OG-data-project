@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Country } from '../country';
 import { CountryService } from '../country.service';
-import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+import { Discipline } from '../discipline';
+import { DisciplineService} from '../discipline.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -13,14 +15,20 @@ export class DashboardComponent implements OnInit {
   countries: Country[];
   maxCountries: Country[] = [null];
   scores: number[] = [0];
+  disciplines: Discipline[];
+  randomDisciplines: Discipline[] = [null];
 
   constructor(    
     private countryService: CountryService,
+    private disciplineService: DisciplineService
   ) { }
 
   ngOnInit() {
     this.getCountries();
     this.getNMaxCountries(10);
+
+    this.getDisciplines();
+    this.getRandomDisciplines(5);
   }
 
 
@@ -51,12 +59,23 @@ export class DashboardComponent implements OnInit {
       this.maxCountries.push(this.countries[index-1]);
 
     }
-    console.log(this.maxCountries);
+    //console.log(this.maxCountries);
 
     this.maxCountries.shift();
-
-
-
   }
 
+  getDisciplines(): void {
+    this.disciplineService.getDisciplines()
+        .subscribe(disciplines => this.disciplines = disciplines);
+  }
+
+  getRandomDisciplines(n: number): void {
+    for (let j = 0; j < n; j++) {
+      var rand = Math.floor(Math.random()*this.disciplines.length);
+      this.randomDisciplines.push(this.disciplines[rand]);
+      console.log(rand);
+    }
+    
+    this.randomDisciplines.shift();
+  }
 }
