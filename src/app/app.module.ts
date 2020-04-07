@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { ChartModule } from 'primeng/chart';
 import { HttpClientModule }    from '@angular/common/http';
 
-
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
@@ -19,6 +18,7 @@ import { GamesComponent } from './games/games.component';
 import { CompareComponent } from './compare/compare.component';
 import { ComparedOneComponent } from './compared-one/compared-one.component';
 import { ComparedSecondComponent } from './compared-second/compared-second.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -34,14 +34,15 @@ import { ComparedSecondComponent } from './compared-second/compared-second.compo
     GamesComponent,
     CompareComponent,
     ComparedOneComponent,
-    ComparedSecondComponent
+    ComparedSecondComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ChartModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

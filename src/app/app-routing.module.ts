@@ -11,11 +11,12 @@ import { DisciplinesComponent } from './disciplines/disciplines.component';
 import { DisciplineComponent } from './discipline/discipline.component';
 import { GamesComponent } from './games/games.component';
 import { CompareComponent } from './compare/compare.component';
+import { AboutComponent } from './about/about.component';
 
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent},
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
   { path: 'geo-test', component: GeoTestComponent},
   { path: 'map', component: MapComponent},
   { path: 'countries', component: CountriesComponent},
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'disciplines', component:DisciplinesComponent},
   { path: 'discipline/:id', component:DisciplineComponent},
   { path: 'games', component:GamesComponent},
-  { path: 'compare', component:CompareComponent}
+  { path: 'compare', component:CompareComponent},
+  { path: 'about', component:AboutComponent}
 ];
 
 @NgModule({
